@@ -1,0 +1,30 @@
+#i_breadcrumb_navigation {
+    height: 50px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    color: #666666;
+}
+
+#i_breadcrumb_navigation a {
+    line-hight: 50px;
+}
+
+#i_breadcrumb_navigation span {
+    line-height: 50px;
+}
+
+#i_breadcrumb_navigation span:hover {
+    cursor: default;
+}
+
+#i_breadcrumb_navigation a:hover {
+    cursor: pointer;
+    color: #66eeff;
+    text-decoration: underline;
+}
+
+#i_breadcrumb_navigation a:last-child {
+    cursor: default !important;
+    color: #666666;
+    text-decoration: none !important;
+}

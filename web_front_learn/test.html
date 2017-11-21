@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./BreadcrumbNavigation/breadcrumbNavigation.js"></script>
+    <link rel="stylesheet" type="text/css" href="./BreadcrumbNavigation/css/breadcrumbNavigation.css"></link>
+    <title>Title</title>
+</head>
+<body>
+<div id="testDiv">
+
+</div>
+</body>
+<script>
+    var items = [];
+    var baseId = "testDiv";
+    var sayHello = function () {
+        alert("hello");
+    }
+    var item1 = {
+        id: "item1",
+        label: "item1",
+        event: sayHello
+    }
+    var item2 = {
+        id: "item2",
+        label: "item2",
+        event: sayHello
+    }
+    items.push(item1);
+    items.push(item2);
+
+    var options = {
+        baseId: baseId,
+        items: items
+    }
+
+    iesfm.createBN(options);
+
+</script>
+</html>
